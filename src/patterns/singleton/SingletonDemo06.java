@@ -1,6 +1,8 @@
 package patterns.singleton;
 
-public class SingletonDemo06 {
+import java.io.Serializable;
+
+public class SingletonDemo06 implements Serializable {
     private static SingletonDemo06 instance;
 
     private SingletonDemo06(){
@@ -15,6 +17,12 @@ public class SingletonDemo06 {
         if(instance==null){
             instance = new SingletonDemo06();
         }
+        return instance;
+    }
+    //Take care of deserialization destroy singleton
+    private Object readResolve(){
+        //instead of the object we deserialized
+        //return the class variable INSTANCE
         return instance;
     }
 }
