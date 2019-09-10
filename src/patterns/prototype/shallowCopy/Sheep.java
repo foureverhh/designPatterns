@@ -1,4 +1,4 @@
-package patterns.prototype;
+package patterns.prototype.shallowCopy;
 
 import java.util.Date;
 
@@ -8,7 +8,8 @@ public class Sheep implements Cloneable{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        Object object = super.clone();
+        return object;
     }
 
     public Sheep(String name, Date birthday) {
@@ -32,7 +33,7 @@ public class Sheep implements Cloneable{
         return birthday;
     }
 
-/*    @Override
+   /* @Override
     public String toString() {
         return "A sheep with name as "+this.name+" and birthday as "+this.birthday;
     }*/
