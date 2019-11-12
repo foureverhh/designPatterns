@@ -1,10 +1,11 @@
 package patterns.bridge_274.brideg_demo;
 
-public class Electronics {
+public class Electronics implements Brand{
     protected Brand brand;
     public Electronics(Brand brand){
         this.brand = brand;
     }
+    @Override
     public void sale(){
         brand.sale();
     }
