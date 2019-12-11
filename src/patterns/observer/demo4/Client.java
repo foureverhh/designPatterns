@@ -15,7 +15,7 @@ public class Client {
         weather.setTemperature(19);
         weatherReport.setHumidity(weather);
         weatherReport.setTemperature(weather);
-        weatherReport.notifyAllObservers(weather);
+        weatherReport.notifyAllObservers();
 
        /* weather.setHumidity(50);
         weather.setTemperature(19);

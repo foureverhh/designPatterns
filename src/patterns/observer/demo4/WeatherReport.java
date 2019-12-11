@@ -19,10 +19,16 @@ public class WeatherReport implements Subject{
         observers.remove(observer);
     }
 
-    @Override
+/*    @Override
     public void notifyAllObservers(Weather weather) {
         for(Observer observer : observers){
             observer.update(weather);
+        }
+    }*/
+    @Override
+    public void notifyAllObservers() {
+        for(Observer observer : observers){
+            observer.update(this);
         }
     }
 
