@@ -1,4 +1,4 @@
-package patterns.observer;
+package patterns.observer.demo1;
 
 public class ConcreteSubject extends Subject{
     private int state;

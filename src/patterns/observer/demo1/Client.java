@@ -1,4 +1,4 @@
-package patterns.observer;
+package patterns.observer.demo1;
 
 public class Client {
     public static void main(String[] args) {
