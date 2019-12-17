@@ -14,6 +14,7 @@ public class LazySingleton {
         return lazySingleton;
     }
 
+
     public void showMyInfo(){
         System.out.println("Lazy instance is: " + this.getClass().getSimpleName() + " , " + lazySingleton);
     }

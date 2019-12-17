@@ -6,15 +6,19 @@ public class Client {
       /*  //饿汉式
         HungrySingleton hungrySingleton = HungrySingleton.getInstance();
         hungrySingleton.showMyInfo();*/
-        new Thread(()->{
+
+      /*  new Thread(()->{
             //懒汉式
-            LazySingleton lazySingleton = null;
             try {
                LazySingleton.getInstance().showMyInfo();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+        }).start();*/
+
+        //Test double check lazy
+        //懒汉式
+        new Thread(()->SingletonDoubleCheck.getInstance().showMyInfo()).start();
 
         //Thread.sleep(4000);
         //new Thread(new TestSingleton()).start();
@@ -27,6 +31,6 @@ public class Client {
 
 
         //懒汉式
-        LazySingleton.getInstance().showMyInfo();
+        SingletonDoubleCheck.getInstance().showMyInfo();
     }
 }
