@@ -10,4 +10,7 @@ public class Client  {
 
     }
 
+    public void showTest(){
+
+    }
 }
