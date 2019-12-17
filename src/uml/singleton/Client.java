@@ -18,7 +18,8 @@ public class Client {
 
         //Test double check lazy
         //懒汉式
-        new Thread(()->SingletonDoubleCheck.getInstance().showMyInfo()).start();
+        //new Thread(()->SingletonDoubleCheck.getInstance().showMyInfo()).start();
+        new Thread(()->SingletonHolder.getInstance().showInstanceInfo()).start();
 
         //Thread.sleep(4000);
         //new Thread(new TestSingleton()).start();
@@ -31,6 +32,7 @@ public class Client {
 
 
         //懒汉式
-        SingletonDoubleCheck.getInstance().showMyInfo();
+        //SingletonDoubleCheck.getInstance().showMyInfo();
+        SingletonHolder.getInstance().showInstanceInfo();
     }
 }
