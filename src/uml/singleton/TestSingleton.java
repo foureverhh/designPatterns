@@ -10,7 +10,11 @@ public class TestSingleton implements Runnable{
     @Override
     public void run() {
         hungrySingleton = HungrySingleton.getInstance();
-        lazySingleton = LazySingleton.getInstance();
+        try {
+            lazySingleton = LazySingleton.getInstance();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("Hungry: " + hungrySingleton + " ,Lazy: " + lazySingleton);
     }
 }

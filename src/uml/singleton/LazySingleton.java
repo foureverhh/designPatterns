@@ -6,8 +6,9 @@ public class LazySingleton {
     private LazySingleton(){
     }
 
-    public static LazySingleton getInstance(){
+    public static synchronized LazySingleton getInstance() throws InterruptedException {
         if(lazySingleton == null){
+            Thread.sleep(1000);
             lazySingleton = new LazySingleton();
         }
         return lazySingleton;
