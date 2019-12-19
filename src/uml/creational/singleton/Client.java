@@ -1,4 +1,4 @@
-package uml.singleton;
+package uml.creational.singleton;
 
 public class Client {
     public static void main(String[] args) throws InterruptedException {

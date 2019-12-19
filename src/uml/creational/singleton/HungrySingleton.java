@@ -1,4 +1,4 @@
-package uml.singleton;
+package uml.creational.singleton;
 
 public class HungrySingleton {
     private static HungrySingleton hungrySingleton = new HungrySingleton();

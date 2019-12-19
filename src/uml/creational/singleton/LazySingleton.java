@@ -1,4 +1,4 @@
-package uml.singleton;
+package uml.creational.singleton;
 
 public class LazySingleton {
     private static LazySingleton lazySingleton = null;

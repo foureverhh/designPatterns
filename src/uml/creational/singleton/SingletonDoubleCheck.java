@@ -1,4 +1,4 @@
-package uml.singleton;
+package uml.creational.singleton;
 
 public class SingletonDoubleCheck {
     private volatile static SingletonDoubleCheck instance = null;

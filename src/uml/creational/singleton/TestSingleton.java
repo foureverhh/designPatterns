@@ -1,4 +1,4 @@
-package uml.singleton;
+package uml.creational.singleton;
 
 public class TestSingleton implements Runnable{
     HungrySingleton hungrySingleton;
