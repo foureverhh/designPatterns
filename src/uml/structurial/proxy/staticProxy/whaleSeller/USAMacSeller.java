@@ -1,7 +1,6 @@
-package uml.structurial.proxy.whaleSeller;
+package uml.structurial.proxy.staticProxy.whaleSeller;
 
-import uml.structurial.proxy.interfaces.IMacSeller;
-import uml.structurial.proxy.reseller.HongKongMacSeller;
+import uml.structurial.proxy.staticProxy.interfaces.IMacSeller;
 
 public class USAMacSeller implements IMacSeller {
     @Override

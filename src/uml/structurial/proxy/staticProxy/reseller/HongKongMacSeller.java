@@ -1,7 +1,7 @@
-package uml.structurial.proxy.reseller;
+package uml.structurial.proxy.staticProxy.reseller;
 
-import uml.structurial.proxy.interfaces.IMacSeller;
-import uml.structurial.proxy.whaleSeller.USAMacSeller;
+import uml.structurial.proxy.staticProxy.interfaces.IMacSeller;
+import uml.structurial.proxy.staticProxy.whaleSeller.USAMacSeller;
 
 public class HongKongMacSeller implements IMacSeller {
     IMacSeller whaleSeller = new USAMacSeller();
